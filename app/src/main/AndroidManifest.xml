@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.SWEProject.bringwithyou">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo5"
+        android:label="جِب معك"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activites.Main2Activity"></activity>
+        <activity android:name=".Activites.Activity4" />
+        <activity android:name=".Activites.MainActivity" />
+        <activity android:name=".Activites.RequestsFrag" />
+        <activity
+            android:name=".Activites.AddOrder"
+            android:label="@string/title_activity_add_order"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activites.Activity2" />
+        <activity android:name=".Activites.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activites.Home2"
+            android:label="@string/title_activity_home2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activites.Login" />
+        <activity android:name=".Activites.Home" />
+        <activity android:name=".Activites.Register" />
+        <activity android:name=".Activites.Chat" />
+        <activity android:name=".Activites.ChatActivity" />
+    </application>
+
+</manifest>

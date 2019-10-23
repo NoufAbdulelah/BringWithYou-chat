@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:radius="32dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:id="@+id/searchET"
+            android:padding="12dp"
+            android:hint="Enter search text here"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableTint="@color/colorPrimary"
+            android:drawablePadding="8dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/searchBTN"
+            android:layout_weight="2"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:drawableEnd="@drawable/ic_search"
+            android:textColor="#ffffff"
+
+            android:background="@drawable/reg_btn_style"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/resturantsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp" />
+</LinearLayout>

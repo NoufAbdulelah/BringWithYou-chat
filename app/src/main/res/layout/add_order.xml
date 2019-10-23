@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/ShopName"
+        android:layout_width="375dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_weight="60"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/ShopImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="shopNAme" />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/ShopImage"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="28dp"
+        android:layout_weight="60"
+        android:background="#00701919"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img4"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShopName" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="28dp"
+        android:layout_weight="60"
+        android:background="@drawable/reg_edittext_style"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Write your order here"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:minLines="2"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShopImage" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="187dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/reg_btn_style"
+        android:text="Order"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        app:layout_constraintVertical_bias="0.48" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout >
